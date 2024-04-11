@@ -197,7 +197,8 @@ https://en.bem.info/methodology/quick-start/*/
 /* Experiencia Académica*/
 
 .academic {
-    padding: 64px
+    padding: 64px;
+    background-color: #EAF2FD;
 }
 
 .academic__title {
@@ -215,22 +216,72 @@ https://en.bem.info/methodology/quick-start/*/
     padding: 0;
 }
 
-.academic__courses__item__img{
+.academic__courses__item__img {
     padding: 50px;
     background-color: #FFFFFF;
 }
-.academic__courses__item__title{
+
+.academic__courses__item__title {
     font-size: 22px;
     color: #464646;
 }
-.academic__courses__item__subtitle{
+
+.academic__courses__item__subtitle {
     color: #464646;
 }
 
 /* experiencia*/
 
-section.experience {}
+.experience {
+    padding: 64px;
+}
 
+.experience__section__title {
+    font-size: 32px;
+    text-align: center;
+    color: #464646;
+}
+
+.experiencie__box__left,
+.experiencie__box__right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 15px 0 15px 0;
+}
+.experiencie__box__right{
+flex-direction: row-reverse;
+}
+
+.experience__title{
+font-size: 22px;
+font-weight: bold;
+color: #464646;
+}
+.experience__text{
+font-size: 16px;
+color: #464646;
+}
+
+.experience__description{
+    height: 51px;
+    display:flex;
+    gap: 10px;
+}
+.experiencia__botao--repo{
+    height: 100%;
+    padding: 16px;
+    border: 1px solid #2A7AE4;
+    color: #2A7AE4;
+}
+.experience__botao--demo{
+    height: 100%;
+    padding: 16px;
+    white-space: nowrap;
+    background-color: #2A7AE4;
+    color: #EAF2FD;
+    border: none;
+}
 /*Contacto*/
 
 section.formcontato {}
