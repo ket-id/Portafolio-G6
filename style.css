@@ -45,6 +45,13 @@ https://en.bem.info/methodology/quick-start/*/
     background-color: #f1f1f1;
 }
 
+.about,
+.academic,
+.formcontato {
+    padding: 64px;
+    background-color: #EAF2FD;
+}
+
 /*Sección Menu*/
 
 .menu {
@@ -120,10 +127,6 @@ https://en.bem.info/methodology/quick-start/*/
 
 /*Sección About*/
 
-.about {
-    padding: 64px;
-    background-color: #EAF2FD;
-}
 
 .about__container {
     display: flex;
@@ -196,11 +199,6 @@ https://en.bem.info/methodology/quick-start/*/
 
 /* Experiencia Académica*/
 
-.academic {
-    padding: 64px;
-    background-color: #EAF2FD;
-}
-
 .academic__title {
     font-size: 32px;
     text-align: center;
@@ -246,35 +244,41 @@ https://en.bem.info/methodology/quick-start/*/
 .experiencie__box__right {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     gap: 8px;
     padding: 15px 0 15px 0;
 }
-.experiencie__box__right{
-flex-direction: row-reverse;
+
+.experiencie__box__right {
+    flex-direction: row-reverse;
 }
 
-.experience__title{
-font-size: 22px;
-font-weight: bold;
-color: #464646;
-}
-.experience__text{
-font-size: 16px;
-color: #464646;
+.experience__title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #464646;
 }
 
-.experience__description{
+.experience__text {
+    font-size: 16px;
+    color: #464646;
+}
+
+.experience__description {
     height: 51px;
-    display:flex;
+    display: flex;
     gap: 10px;
 }
-.experiencia__botao--repo{
+
+.experiencia__botao--repo {
     height: 100%;
     padding: 16px;
     border: 1px solid #2A7AE4;
     color: #2A7AE4;
 }
-.experience__botao--demo{
+
+.experience__botao--demo,
+.formcontato__botao {
     height: 100%;
     padding: 16px;
     white-space: nowrap;
@@ -282,13 +286,94 @@ color: #464646;
     color: #EAF2FD;
     border: none;
 }
-/*Contacto*/
 
-section.formcontato {}
+/*Contacto*/
+.formcontato__contacto {
+    display: flex;
+    gap: 16px;
+}
+
+.formcontato__text,
+.formcontato__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formcontato__text {
+    gap: 8px;
+}
+
+.formcontato__title {
+    font-size: 32px;
+    color: #464646;
+}
+
+.formcontato__subtext {
+    font-size: 16px;
+    color: #464646;
+}
+
+.formcontato__text h3 {
+    margin: 0;
+}
+
+.formcontato__form {
+    gap: 32px;
+}
+
+.formcontato__form label {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0 0 5px;
+    color: #464646;
+    font-size: 12px;
+
+    border-radius: 4px;
+    background-color: #FFFFFF;
+
+}
+
+.formcontato__input,
+.formcontato__textarea {
+    height: 100%;
+    font-size: 16px;
+    color: #464646;
+    border: 0;
+    border-bottom: #C8C8C8 2px solid;
+    outline: none;
+}
+
+.contenedor__textarea {
+    height: 133px;
+}
+
+.formcontato__input:focus,
+.formcontato__textarea:focus {
+    border-bottom: #2A7AE4 2px solid;
+    caret-color: #2A7AE4;
+}
+
+.formcontato__botao {
+    width: 144px;
+}
 
 /*footeer*/
 
-section.footer {}
+.footer {
+    display: flex;
+   justify-content: center;
+    padding: 32px;
+}
+
+.footer__rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__rodape p{
+    font-size: 16px;
+    margin: 3px;
+}
 
 /* Vamos a desafiarnos trabajando con responsividad?
 Utiliza las referencias de los breakpoints @media abajo */
