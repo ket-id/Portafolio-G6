@@ -110,7 +110,7 @@ https://en.bem.info/methodology/quick-start/*/
 }
 
 .title__bio {
-    font-size: 52px;
+    font-size: calc(1rem + 2vw);
     color: #464646;
 }
 
@@ -361,7 +361,7 @@ https://en.bem.info/methodology/quick-start/*/
 
 .footer {
     display: flex;
-   justify-content: center;
+    justify-content: center;
     padding: 32px;
 }
 
@@ -370,9 +370,28 @@ https://en.bem.info/methodology/quick-start/*/
     flex-direction: column;
     align-items: center;
 }
-.footer__rodape p{
+
+.footer__rodape p {
     font-size: 16px;
     margin: 3px;
+}
+
+
+/* imagenes */
+
+.profile__img__contenedor {
+    width: 50%;
+
+}
+
+.profile__img__contenedor img{
+    max-width: 100%;
+}
+
+.experiencie__box__left img,
+.experiencie__box__right img {
+    max-width: 100%;
+    max-height: 350px;
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?
