@@ -246,20 +246,20 @@
                     <form class="formcontato__form" name="form">
                         <label class="inputs__contacto__labels">
                             Nombre
-                            <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre y apellido.">
+                            <input class="formcontato__input" id="nombre_input" type="text" name="nombre" placeholder="Nombre y apellido.">
                         </label>
                         <label>E-mail
-                            <input class="formcontato__input" type="email" name="email" placeholder="Ejemplo@ejemplo.com ">
+                            <input class="formcontato__input" id="email_input" type="email" name="email" placeholder="Ejemplo@ejemplo.com ">
                         </label>
                         <label>Asunto
-                            <input class="formcontato__input" type="text" name="asunto" placeholder=" titulo del mensaje.">
+                            <input class="formcontato__input" id="asunto_input" type="text" name="asunto" placeholder=" titulo del mensaje.">
                         </label>
                         <label class="contenedor__textarea">Mensaje
-                            <textarea class="formcontato__textarea" rows="20" cols="40" id="mensagem" name="mensaje"
+                            <textarea class="formcontato__textarea" rows="20" cols="40" id="mensaje_input" name="mensaje"
                             placeholder="Escriba aqui."></textarea>
                         </label>
                         
-                        <button type="submit" class="formcontato__botao">Enviar mensaje</button>
+                        <button onclick="validarCampos()" type="submit" id="boton_contacto" class="formcontato__botao">Enviar mensaje</button>
                     </form>
                 </div>
             </div>
