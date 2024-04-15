@@ -210,6 +210,7 @@ https://en.bem.info/methodology/quick-start/*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 15px;
 }
 
 .academic__courses__list {
@@ -219,12 +220,13 @@ https://en.bem.info/methodology/quick-start/*/
 .academic__courses__item__img {
     display: flex;
     justify-content: center;
-    padding: 50px;
+    padding: 20px;
     background-color: #FFFFFF;
     width: 250px;
-    height: 250px ;
+    height: 250px;
 }
-.academic__courses__item__img  img{
+
+.academic__courses__item__img img {
     max-width: 100%;
 }
 
@@ -302,7 +304,8 @@ https://en.bem.info/methodology/quick-start/*/
     display: flex;
     gap: 16px;
 }
-.formcontato__img{
+
+.formcontato__img {
     display: flex;
     max-width: 100%;
 }
@@ -398,7 +401,7 @@ https://en.bem.info/methodology/quick-start/*/
     height: auto;
 }
 
-.profile__img__contenedor img{
+.profile__img__contenedor img {
     max-width: 100%;
 }
 
@@ -416,18 +419,20 @@ Utiliza las referencias de los breakpoints @media abajo */
 @media (max-width: 1024px) {
 
     /* Menú */
-.menu__list__item:nth-child(1),
-.menu__list__item:nth-child(2),
-.menu__list__item:nth-child(3),
-.menu__list__item:nth-child(4),
-.menu__list__item:nth-child(5){
-    display: none;
-}
+    .menu__list__item:nth-child(1),
+    .menu__list__item:nth-child(2),
+    .menu__list__item:nth-child(3),
+    .menu__list__item:nth-child(4),
+    .menu__list__item:nth-child(5) {
+        display: none;
+    }
+
     /*title*/
     /* about */
     .about__container {
-        padding:0;
+        padding: 0;
     }
+
     /*Skills*/
 
     /*Hobbies*/
@@ -436,17 +441,38 @@ Utiliza las referencias de los breakpoints @media abajo */
 
     /*Experiencia Profesional*/
     /* contacto */
-    .formcontato__img{
+    .formcontato__img {
         display: none;
     }
 }
 
 /*Mobile*/
-@media (min-width: 480px) {
+@media (max-width: 840px) {
+
+/* varios */
+.about, .academic, .formcontato{
+    padding: 15px;
+}
 
     /*Menu*/
+    .menu__list__item__contato {
+        display: none;
+    }
 
     /*Titulo*/
+    .title {
+        padding: 10px;
+    }
+
+    .title__div {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: flex-end;
+
+    }
+    .title__network{
+        gap: 10px;
+    }
 
     /*Sección sobre mi*/
 
@@ -455,10 +481,15 @@ Utiliza las referencias de los breakpoints @media abajo */
     /*Hobbies*/
 
     /*Formación Académica*/
-
+.academic__courses{
+    justify-content:center;
+}
     /*Experiencia Profesional*/
 
     /*Contacto*/
+    .formcontato__contacto {
+        display: block;
+    }
 
     /*Footer*/
 
