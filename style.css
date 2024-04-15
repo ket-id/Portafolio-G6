@@ -455,6 +455,9 @@ Utiliza las referencias de los breakpoints @media abajo */
 }
 
     /*Menu*/
+    .menu{
+        height: 15px;
+    }
     .menu__list__item__contato {
         display: none;
     }
