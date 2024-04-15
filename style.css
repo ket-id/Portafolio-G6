@@ -492,5 +492,9 @@ Utiliza las referencias de los breakpoints @media abajo */
     }
 
     /*Footer*/
+    .footer{
+         white-space: nowrap; 
+         padding: 10px;  
+    }
 
 }
