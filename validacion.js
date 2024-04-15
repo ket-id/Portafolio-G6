@@ -1,8 +1,3 @@
-// function botonDeshabilitado() {
-//     let boton = document.getElementById("boton_contacto");
-//     boton.disabled = true;
-// }
-// botonDeshabilitado()
 
 // Obtener los elementos de entrada y el botón
 var input1 = document.getElementById("nombre_input");
